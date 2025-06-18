@@ -1,6 +1,6 @@
 import React, {ReactNode} from 'react'
 import './globals.css'
-import {Providers} from '@/app/layout/providers'
+import {Providers} from '@/app/layout/providers/index.tsx'
 import Header from '@/widgets/header/Header'
 import Footer from '@/widgets/footer/Footer'
 import {BASIS_URL} from '@/config/config'
