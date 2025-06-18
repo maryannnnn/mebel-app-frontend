@@ -1,6 +1,6 @@
 import React, {ReactNode} from 'react'
 import './globals.css'
-import {Providers} from './layout/providers/index.tsx'
+import {Providers} from './layout/providers'
 import Header from '@/widgets/header/Header'
 import Footer from '@/widgets/footer/Footer'
 import {BASIS_URL} from '@/config/config'
@@ -29,7 +29,7 @@ export const metadata = {
 
 const RootLayout = ({children}: { children: ReactNode }) => {
     return (
-        <html lang="ru">
+        <html lang="en">
         <body className="flex flex-col min-h-screen">
         <Providers>
             <Header/>
