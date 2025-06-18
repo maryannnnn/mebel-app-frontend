@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 // import '../app/scss/app.scss';
 // import {SpeedInsights} from "@vercel/speed-insights/next";
 // import MainLayout from "../app/layouts/MainLayout";
@@ -19,23 +19,10 @@ import React from 'react';
 import RootLayout from "@/app/layout";
 
 
-const Index = (
-    // {initialData}
-    ) => {
-  // const PageProps = {
-  //   title: 'Главная',
-  //   description: 'Главная'
-  // };
-  //
-  // const {loading, error, data} = useQuery(GET_HOME_DATA, {
-  //   fetchPolicy: "cache-first",
-  //   nextFetchPolicy: "cache-and-network"
-  // });
-
-  // const displayData = data || initialData;
+const Index = () => {
 
   return (
-      <RootLayout title="{PageProps.title}" description="{PageProps.description}">
+      <div>
         <h1 className='title-h1'>Привет всем</h1>
 
         {/*{loading && !displayData ? (*/}
@@ -84,7 +71,7 @@ const Index = (
         {/*    </>*/}
         {/*)}*/}
         {/*<SpeedInsights/>*/}
-      </RootLayout>
+      </div>
   );
 };
 
