@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 // import '../app/scss/app.scss';
 // import {SpeedInsights} from "@vercel/speed-insights/next";
 // import MainLayout from "../app/layouts/MainLayout";
@@ -16,7 +16,6 @@ import React, {ReactNode} from 'react';
 // import Stack from "@mui/material/Stack";
 // import Alert from "@mui/material/Alert";
 // import {mainTitle, testimonialType} from "../app/info/info";
-import RootLayout from "@/app/layout";
 
 
 const Index = () => {
