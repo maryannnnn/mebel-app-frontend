@@ -19,7 +19,9 @@ import React from 'react';
 import RootLayout from "@/app/layout";
 
 
-const Index = ({initialData}) => {
+const Index = (
+    // {initialData}
+    ) => {
   // const PageProps = {
   //   title: 'Главная',
   //   description: 'Главная'
