@@ -2,9 +2,11 @@ import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 import rtl from "tailwindcss-rtl";
 import animate from "tailwindcss-animate";
+import forms from '@tailwindcss/forms';
 
 const config: Config = {
     darkMode: "class",
+    safelist: ['rtl', 'ltr', 'dir-rtl', 'dir-ltr', 'text-right', 'text-left']
     content: [
         "./app/**/*.{ts,tsx}",
         "./components/**/*.{ts,tsx}",
@@ -66,7 +68,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [rtl, animate],
+    plugins: [rtl, animate, forms],
 };
 
 export default config;

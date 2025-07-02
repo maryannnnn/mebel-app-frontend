@@ -1,9 +1,9 @@
 import React from 'react';
-import MainBanner from '@/widgets/main-banner/MainBanner';
-import MainBonus from '@/widgets/main-bonus/MainBonus';
+// import MainBanner from '@/widgets/main-banner/MainBanner';
+// import MainBonus from '@/widgets/main-bonus/MainBonus';
 import MainCompany from '@/widgets/main-company/MainCompany';
-import MainMassage from '@/widgets/main-massage/MainMassage';
-import MainCourse from '@/widgets/main-course/MainCourse';
+// import MainMassage from '@/widgets/main-massage/MainMassage';
+// import MainCourse from '@/widgets/main-course/MainCourse';
 import {getClient} from '@/app/graphql/apollo-client';
 import {GET_MAIN_DATA} from '@/app/graphql/main/getMainData';
 import {Alert, AlertDescription, AlertTitle} from '@/components/ui/alert';

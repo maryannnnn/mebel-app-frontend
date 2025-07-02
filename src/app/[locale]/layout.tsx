@@ -1,11 +1,11 @@
 import '../globals.css';
-import React, {ReactNode} from 'react';
+import React  from 'react';
 import {getMessages} from 'next-intl/server';
 import {Providers} from '@/app/layout/providers';
 import Header from '@/widgets/header/Header';
 import Footer from '@/widgets/footer/Footer';
 
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 
