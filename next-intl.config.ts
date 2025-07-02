@@ -15,10 +15,10 @@
 import type { IntlConfig } from 'next-intl';
 
 const nextIntlConfig: IntlConfig = {
-    locales: ['en', 'he'],
     defaultLocale: 'en'
 };
 
 export default nextIntlConfig;
+
 
 
