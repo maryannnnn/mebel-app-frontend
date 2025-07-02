@@ -8,7 +8,7 @@ export default function MainCompany({ data }: Props) {
         <section>
             {data.data.map((index) => (
                 <article key={index.id}>
-                    <h2>{index.id}</h2>
+                    <h2>Number good: {index.id}</h2>
                 </article>
             ))}
         </section>
