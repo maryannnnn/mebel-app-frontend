@@ -6,7 +6,7 @@ import forms from '@tailwindcss/forms';
 
 const config: Config = {
     darkMode: "class",
-    safelist: ['rtl', 'ltr', 'dir-rtl', 'dir-ltr', 'text-right', 'text-left']
+    safelist: ['rtl', 'ltr', 'dir-rtl', 'dir-ltr', 'text-right', 'text-left'],
     content: [
         "./app/**/*.{ts,tsx}",
         "./components/**/*.{ts,tsx}",

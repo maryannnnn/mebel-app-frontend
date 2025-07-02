@@ -12,13 +12,11 @@
 
 
 // next-intl.config.ts
-import type { IntlConfig } from 'next-intl';
-
-const nextIntlConfig: IntlConfig = {
-    defaultLocale: 'en'
+const config = {
+    messages: {}, // временно пусто или импортируешь как нужно
 };
 
-export default nextIntlConfig;
+export default config;
 
 
 
