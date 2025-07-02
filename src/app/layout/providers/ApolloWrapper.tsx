@@ -1,14 +1,15 @@
-'use client'
+'use client';
 
-import React from "react";
-import { ApolloProvider } from '@apollo/client'
-import apolloClient from '@/lib/apollo-client'
-
+import React, { useRef } from 'react';
+import { ApolloProvider } from '@apollo/client';
+import { usePathname } from 'next/navigation';
+import { getClient } from '@/app/graphql/apollo-client';
 
 export function ApolloWrapper({ children }: { children: React.ReactNode }) {
-    return (
-        <ApolloProvider client={apolloClient}>
-            {children}
-        </ApolloProvider>
-    )
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1] || 'en';
+
+    const clientRef = useRef(getClient(locale)); // инициализируем один раз
+
+    return <ApolloProvider client={clientRef.current}>{children}</ApolloProvider>;
 }

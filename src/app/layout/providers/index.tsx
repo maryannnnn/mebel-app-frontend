@@ -1,15 +1,23 @@
-'use client'
+'use client';
 
-import React from "react";
+import { ReactNode } from 'react';
 import { ApolloWrapper } from './ApolloWrapper'
-// import { ThemeProvider } from './ThemeProvider' // если нужно
+import { NextIntlClientProvider } from 'next-intl';
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function Providers({
+                              children,
+                              locale,
+                              messages
+                          }: {
+    children: ReactNode;
+    locale: string;
+    messages: Record<string, any>;
+}) {
     return (
-        <ApolloWrapper>
-            {/* <ThemeProvider> */}
-            {children}
-            {/* </ThemeProvider> */}
-        </ApolloWrapper>
-    )
+        <NextIntlClientProvider locale={locale} messages={messages}>
+            <ApolloWrapper>
+                {children}
+            </ApolloWrapper>
+        </NextIntlClientProvider>
+    );
 }
